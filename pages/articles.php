@@ -1,12 +1,8 @@
-<?
+<?
 include('Arr_Data.php');
-
-$current_article = '';
-$current_article = $_GET['Articles'];
+$current_article = '';
+$current_article = $_GET['Articles'];
 $current_articleS = str_replace('-', ' ', $_GET['Articles']); 
-
-
-/* Add check to see if title is in array to show if not show whole list with error*/
 if((isset($_GET['Articles'])) && ($current_article!='')) {
 $Article_Number = searchFor($current_articleS, $Articles_Array, '1');
 ?>
